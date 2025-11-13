@@ -15,7 +15,7 @@ static PROXYIP_PATTERN: Lazy<Regex> = Lazy::new(|| Regex::new(r"^.+-\d+$").unwra
 static PROXYKV_PATTERN: Lazy<Regex> = Lazy::new(|| Regex::new(r"^([A-Z]{2})").unwrap());
 
 // Base URL for GitHub raw content
-static GITHUB_BASE_URL: &str = "https://raw.githubusercontent.com/AFRcloud/SirenWeb/refs/heads/master/web";
+static GITHUB_BASE_URL: &str = "https://raw.githubusercontent.com/thissrerre/SirenWeb/refs/heads/master/web";
 
 #[event(fetch)]
 async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
@@ -53,7 +53,7 @@ async fn main(req: Request, env: Env, _: Context) -> Result<Response> {
         .on_async("/sub", sub)
         .on_async("/link", link)
         .on_async("/:proxyip", tunnel)
-        .on_async("/Inconigto-Mode/:proxyip", tunnel)
+        .on_async("/raikazu-Mode/:proxyip", tunnel)
         .run(req, env)
         .await
 }
@@ -153,7 +153,7 @@ async fn tunnel(req: Request, mut cx: RouteContext<Config>) -> Result<Response> 
 
         if proxy_kv_str.is_empty() {
             console_log!("getting proxy kv from github...");
-            let req = Fetch::Url(Url::parse("https://raw.githubusercontent.com/AFRcloud/ProxyList/refs/heads/main/kvProxyList.json")?);
+            let req = Fetch::Url(Url::parse("https://raw.githubusercontent.com/RaikazuWebId/Nautica/refs/heads/main/kvProxyList.json")?);
             let mut res = req.send().await?;
             if res.status_code() == 200 {
                 proxy_kv_str = res.text().await?.to_string();
