@@ -15,7 +15,7 @@ routes = [
   { pattern = "bimbel.ruangguru.com.wc.rzw.biz.id", custom_domain = true },
   { pattern = "support.zoom.us.wc.rzw.biz.id", custom_domain = true },
   { pattern = "cache.netflix.com.wc.rzw.biz.id", custom_domain = true },
-  { pattern = "investor.fb.com.wc.rzw.biz.id", custom_domain = true },
+  { pattern = "api22-normal-c-alisg.tiktokv.com.wc.rzw.biz.id", custom_domain = true },
   { pattern = "nontontv.vidio.com.wc.rzw.biz.id", custom_domain = true },
   { pattern = "blog.clova.line.me.wc.rzw.biz.id", custom_domain = true },
 ]
