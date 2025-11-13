@@ -9,15 +9,15 @@ const QRCode = window.QRCode
 let proxyList = []
 let filteredProxyList = []
 let selectedProxy = null
-const defaultProxyUrl = "https://raw.githubusercontent.com/AFRcloud/ProxyList/refs/heads/main/ProxyList.txt"
+const defaultProxyUrl = "https://raw.githubusercontent.com/RaikazuWebId/Nautica/refs/heads/main/kvProxyList.json"
 
-const serverDomains = ["stbwrt.biz.id","stbwrt.web.id"]
+const serverDomains = ["vvip.rzw.biz.id"]
 let selectedServerDomain = serverDomains[0] // Default to first domain
-const defaultUUID = "bbbbbbbb-cccc-4ddd-eeee-ffffffffffff"
+const defaultUUID = "raikazuxxxx-cccc-4ddd-eeee-ffffffffffff"
 const itemsPerPage = 10
 let currentPage = 1
 
-const pathTemplate = "/Inconigto-Mode/{ip}-{port}"
+const pathTemplate = "/raikazu/{ip}-{port}"
 
 // Array of bug options for easy management
 const bugOptions = [
@@ -35,7 +35,7 @@ const bugOptions = [
   { value: "graph.facebook.com", label: "FACEBOOK" },
   { value: "facebook.com", label: "FACEBOOK" },
   { value: "dogseechew.com", label: "TIKTOK" },
-  { value: "mssdk24-normal-useast2a.tiktokv.com", label: "TIKTOK" },
+  { value: "api22-normal-c-alisg.tiktokv.com", label: "TIKTOK" },
   { value: "manual", label: "Manual Non-Wildcard" },
 ];
 
