@@ -1,11 +1,11 @@
 const CONFIG = {
-  'proxyListUrl': "https://raw.githubusercontent.com/AFRcloud/ProxyList/refs/heads/main/ProxyList.txt",
+  'proxyListUrl': "https://github.com/RaikazuWebId/Nautica/blob/main/proxyList.txt",
   'apiCheckUrl': "https://afrcloud.dpdns.org/",
-  'mainDomains': ["stbwrt.biz.id","stbwrt.web.id"],
-  'defaultUuid': 'bbbbbbbb-cccc-4ddd-eeee-ffffffffffff',
+  'mainDomains': ["vvip.rzw.biz.id"],
+  'defaultUuid': 'raikazuxxxx-cccc-4ddd-eeee-ffffffffffff',
   'maxProxies': 0x32,
   'defaultProxyCount': 0x5,
-  'pathTemplate': "/Inconigto-Mode/{ip}-{port}"
+  'pathTemplate': "/raikazu/{ip}-{port}"
 };
 let proxyList = [];
 let filteredProxyList = [];
